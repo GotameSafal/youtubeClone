@@ -4,7 +4,7 @@ import VideoCard from "@/components/VideoCard";
 import { useGetVideosQuery } from "@/Redux/features/youtubApi";
 import { useSelector } from "react-redux";
 const index = () => {
-  const searchData = useSelector((state) => state.fetchSideData);
+    const searchData = useSelector((state) => state.fetchSideData);
   const { data, isLoading, error } = useGetVideosQuery(searchData);
   return (
     <Stack h="calc(100vh - 80px)" spacing direction="row" bg="#0f0f0f">
